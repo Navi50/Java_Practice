@@ -5,8 +5,8 @@ public class Day2_MissingElement_PowerOfTwo {
         //Given Integer array x[], return missing number in 1 to n.
         int total = n*(n+1)/2;
         int sum = 0;
-        for(int i = 0; i<x.length; i++){
-            sum = sum+x[i];
+        for (int j : x) {
+            sum = sum + j;
         }
         return total-sum;
     }
